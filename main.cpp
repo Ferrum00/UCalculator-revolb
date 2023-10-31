@@ -46,7 +46,7 @@ int main() {
 
         cout << "\nВы хотите перезапустить калькулятор? [Д/Н]: ";
         cin >> restart;
-    } while (restart == 'Д' || restart == 'Н');
+    }while (restart == 'Д' || restart == 'Н');
 
     return 0;
 }
