@@ -12,7 +12,7 @@ int main() {
 
     setlocale(LC_ALL, "RUSSIAN");
 
-    do {
+    while(true){
         cout << "\n\nДобро пожаловать в улучшеный калькулятор от Дэфэнсива!\n";
 
         cout << "\nВведи первое число: ";
@@ -44,9 +44,15 @@ int main() {
 
         cout << "Ответ: " << pRes << endl;
 
-        cout << "\nВы хотите перезапустить калькулятор? [Д/Н]: ";
+        cout << "\nВы хотите перезапустить калькулятор? [Y/N]: ";
         cin >> restart;
-    }while (restart == 'Д' || restart == 'Н');
 
+        if(restart == 'Y'){
+        	 continue;
+        }
+        if(restart == 'N'){
+        	break;
+        }
+    }
     return 0;
 }
